@@ -1,0 +1,34 @@
+body {
+	font-family: Lato, san-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+.container {
+	max-width: 920px;
+}
+
+.text-muted {
+	color: #bcbb8b;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+.title-super {
+	font-size: 3em;
+}
+
+.img-responsive {
+	display: block;
+	margin: 0 auto;
+}
+
+.img-center {
+	padding-top: 20px;
+}
