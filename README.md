@@ -19,7 +19,7 @@ and start index.html file.
 
 ## Or 2
 
-[Click](dalex01.github.io/frontend-nanodegree-portfolio)
+[Click](http://dalex01.github.io/frontend-nanodegree-portfolio)
 
 ## TODO
 
