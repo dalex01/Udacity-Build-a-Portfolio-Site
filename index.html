@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta information were taken from example from lecture. I didn't investigate its meaning. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Final Project for HTML, CSS Udacity course</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header>
+          <div class="col-md-2">
+            <picture>
+              <source media="(max-width: 400px)" srcset="./img/logo-small.jpg">
+              <source media="(max-width: 700px)" srcset="./img/logo-small.jpg">
+              <img class="title-logo img-responsive" src="./img/logo.jpg" alt="Logo">
+            </picture>
+          </div>
+          <div class="col-md-10 text-uppercase text-right">
+              <h1 class="title-super text-thin">Jane Doette</h1>
+              <h3>Front-end Ninja</h3>
+          </div>
+        </header>
+      </div>
+      <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-md-12">
+        <picture>
+            <source media="(max-width: 400px)" srcset="./img/big-img-new-small.jpg">
+            <source media="(max-width: 700px)" srcset="./img/big-img-new-middle.jpg">
+            <img class="img-responsive" src="./img/big-img-new.jpg" alt="Big Img">
+          </picture>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <header id="articles">
+            <h2 class="text-muted">Featured Work</h2>
+          </header>
+        </div>
+      </div>
+      <section>
+        <div class="row">
+          <div class="col-md-4 text-center img-center">
+            <img class="img-responsive" src="./img/img1.jpg" alt="Alt1">
+            <h3>Appify</h3>
+            <p>
+              <a href="http://github.com/">http://github.com/</a>
+            </p>
+            <!-- Button trigger modal -->
+             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+              Launch demo modal
+            </button>
+          </div>
+          <div class="col-md-4 text-center img-center">
+            <img class="img-responsive" src="./img/img2.jpg" alt="Alt2">
+            <h3>Sunflower</h3>
+            <p>
+              <a href="http://github.com/">http://github.com/</a>
+            </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+              Launch demo modal
+            </button>
+          </div>
+          <div class="col-md-4 text-center img-center">
+            <img class="img-responsive" src="./img/img3.jpg" alt="Alt3">
+            <h3>Bokeh</h3>
+            <p>
+              <a href="http://github.com/">http://github.com/</a>
+            </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+                Launch demo modal
+              </button>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-md-6 text-center img-center">
+            <picture>
+              <source media="(max-width: 700px)" srcset="./img/front-end-developer-small.jpg">
+              <img class="img-responsive" src="./img/front-end-developer.jpg" alt="Big Img">
+            </picture>
+            <h3>Front End Development</h3>
+            <p>
+              <a href="http://github.com/">http://github.com/</a>
+            </p>
+            <!-- Button trigger modal -->
+             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+              Launch demo modal
+            </button>
+          </div>
+          <div class="col-md-6 text-center img-center">
+            <picture>
+              <source media="(max-width: 700px)" srcset="./img/top-skills-small.jpg">
+              <img class="img-responsive" src="./img/top-skills.jpg" alt="Big Img">
+            </picture>
+            <h3>Front End Development Top Skills</h3>
+            <p>
+              <a href="http://github.com/">http://github.com/</a>
+            </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">
+              Launch demo modal
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img class="img-responsive" src="./img/img1.jpg" alt="Alt1">
+            <article>
+              <header>
+                <h4 class="modal-title" id="myModalLabel1">Appify</h4>
+              </header>
+              <p>Create the simplest possible Mac app from a shell script</p>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal2 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img class="img-responsive" src="./img/img2.jpg" alt="Alt2">
+            <article>
+              <header>
+                <h4 class="modal-title" id="myModalLabel2">Sunflower</h4>
+              </header>
+              <p>Helianthus or sunflowers (from the Greek: ήλιος, Hēlios, "sun" and ανθός, anthos, "flower") L. /ˌhiːliˈænθəs/[2] is a genus of plants comprising about 70 species[3] in the family Asteraceae, all of which are native to North America except three species in South America. The common name, "sunflower," also applies to the popular annual species Helianthus annuus, the common sunflower.[4] This and other species, notably Jerusalem artichoke (H. tuberosus), are cultivated in temperate regions as food crops and ornamental plants.[5]</p>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal3 -->
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img class="img-responsive" src="./img/img3.jpg" alt="Alt3">
+            <article>
+              <header>
+                <h4 class="modal-title" id="myModalLabel3">Bokeh</h4>
+              </header>
+              <p>In photography, bokeh (Originally /ˈboʊkɛ/,[1] /ˈboʊkeɪ/ boh-kay — also sometimes pronounced as /ˈboʊkə/ boh-kə,[2] Japanese: [boke]) is the aesthetic quality of the blur produced in the out-of-focus parts of an image produced by a lens.[3][4][5] Bokeh has been defined as "the way the lens renders out-of-focus points of light".[6] Differences in lens aberrations and aperture shape cause some lens designs to blur the image in a way that is pleasing to the eye, while others produce blurring that is unpleasant or distracting—"good" and "bad" bokeh, respectively.[7] Bokeh occurs for parts of the scene that lie outside the depth of field. Photographers sometimes deliberately use a shallow focus technique to create images with prominent out-of-focus regions.</p>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal4 -->
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <picture>
+              <source media="(max-width: 700px)" srcset="./img/front-end-developer-small.jpg">
+              <img class="img-responsive" src="./img/front-end-developer.jpg" alt="Big Img">
+            </picture>
+            <article>
+              <header>
+                <h4 class="modal-title" id="myModalLabel4">Front End Development</h4>
+              </header>
+              <p>Front End Development, also known as Client Side Development is the practice of producing HTML, CSS and JavaScript for a website or web application so that a user can see and interact with them directly.[1] The challenges associated with front end developers is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.</p>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal5 -->
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <picture>
+              <source media="(max-width: 700px)" srcset="./img/top-skills-small.jpg">
+              <img class="img-responsive" src="./img/top-skills.jpg" alt="Big Img">
+            </picture>
+            <article>
+              <header>
+                <h4 class="modal-title" id="myModalLabel5">Front End Development Top Skills</h4>
+              </header>
+              <p>HTML is the standard markup language used to create web pages.</p>
+              <p>CSS is a style sheet language used for describing the look and formatting of a document written in a markup language.</p>
+              <p> javascript is a high level, dynamic, untyped, and interpreted programming language.</p>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
